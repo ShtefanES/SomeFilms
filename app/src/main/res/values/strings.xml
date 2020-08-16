@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">Some films</string>
+
+	<string name="cinema_hall_title">Главная</string>
+	<string name="genres_title">Жанры</string>
+	<string name="posters_title">Фильмы</string>
+	<string name="error_stub_message">Что-то пошло не так :(\nпопробуйте снова</string>
+	<string name="detail_film_year">Год : %s</string>
+	<string name="detail_film_rating">Рейтинг : %s</string>
+	<string name="no_data">нет данных</string>
+</resources>

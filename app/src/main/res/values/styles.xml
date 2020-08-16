@@ -1,0 +1,71 @@
+<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="AppTheme.NoActionBarMain">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="android:windowBackground">@color/colorDark</item>
+	</style>
+
+	<style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+		<item name="android:background">@color/colorPrimary</item>
+		<item name="titleTextColor">@color/colorWhite</item>
+	</style>
+
+	<style name="CardViewStyle">
+		<item name="cardCornerRadius">@dimen/card_corner_radius</item>
+		<item name="cardUseCompatPadding">true</item>
+	</style>
+
+	<style name="CardViewStyle.PosterCardViewStyle">
+		<item name="android:layout_marginStart">@dimen/spacing_16</item>
+		<item name="android:layout_marginEnd">@dimen/spacing_16</item>
+		<item name="cardBackgroundColor">@color/colorPrimary</item>
+	</style>
+
+	<style name="PosterItemTitleContainerStyle">
+		<item name="android:background">@color/colorTransparentDark</item>
+	</style>
+
+	<style name="PosterItemTitleStyle">
+		<item name="android:layout_margin">@dimen/spacing_8</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:maxLines">2</item>
+		<item name="android:textAlignment">center</item>
+		<item name="android:textColor">@color/colorDarkWhite</item>
+	</style>
+
+	<style name="GenreItemTitleStyle">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:padding">@dimen/spacing_8</item>
+		<item name="android:textAlignment">center</item>
+	</style>
+
+	<style name="TitleItemStyle">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:layout_margin">@dimen/spacing_8</item>
+		<item name="android:textAlignment">center</item>
+	</style>
+
+	<style name="FilmDetailOriginalTitleStyle">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:layout_marginStart">@dimen/spacing_24</item>
+	</style>
+
+	<style name="FilmDetailSubtitleStyle">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:layout_marginStart">@dimen/spacing_24</item>
+		<item name="android:layout_marginTop">@dimen/spacing_16</item>
+	</style>
+
+	<style name="FilmDetailDescriptionStyle">
+		<item name="android:textColor">@color/colorWhite</item>
+		<item name="android:layout_marginBottom">@dimen/spacing_16</item>
+		<item name="android:layout_marginTop">@dimen/spacing_32</item>
+	</style>
+</resources>

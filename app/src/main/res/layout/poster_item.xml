@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/CardViewStyle.PosterCardViewStyle"
+	android:layout_width="@dimen/image_side"
+	android:layout_height="@dimen/image_side">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/image"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/image_side" />
+
+		<LinearLayout
+			style="@style/PosterItemTitleContainerStyle"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/spacing_48"
+			android:layout_gravity="bottom">
+
+			<TextView
+				android:id="@+id/title"
+				style="@style/PosterItemTitleStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				tools:text="title" />
+		</LinearLayout>
+	</FrameLayout>
+</com.google.android.material.card.MaterialCardView>

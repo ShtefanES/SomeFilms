@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="match_constraint">0dp</dimen>
+	<dimen name="card_corner_radius">8dp</dimen>
+	<dimen name="spacing_4">4dp</dimen>
+	<dimen name="spacing_8">8dp</dimen>
+	<dimen name="spacing_16">16dp</dimen>
+	<dimen name="spacing_24">24dp</dimen>
+	<dimen name="spacing_32">32dp</dimen>
+	<dimen name="spacing_48">48dp</dimen>
+	<dimen name="spacing_138">138dp</dimen>
+	<dimen name="image_side">148dp</dimen>
+</resources>

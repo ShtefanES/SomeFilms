@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/ToolbarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize" />
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:id="@+id/image"
+				android:layout_width="@dimen/image_side"
+				android:layout_height="@dimen/image_side"
+				app:layout_constraintStart_toStartOf="@id/startGuideline"
+				app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+			<TextView
+				android:id="@+id/originalTitle"
+				android:layout_width="@dimen/match_constraint"
+				android:layout_height="wrap_content"
+				style="@style/FilmDetailOriginalTitleStyle"
+				app:layout_constraintEnd_toEndOf="@id/endGuideline"
+				app:layout_constraintStart_toEndOf="@+id/image"
+				app:layout_constraintTop_toTopOf="@id/topGuideline"
+				tools:text="title" />
+
+			<TextView
+				android:id="@+id/year"
+				android:layout_width="@dimen/match_constraint"
+				android:layout_height="wrap_content"
+				style="@style/FilmDetailSubtitleStyle"
+				app:layout_constraintEnd_toEndOf="@id/endGuideline"
+				app:layout_constraintStart_toEndOf="@+id/image"
+				app:layout_constraintTop_toBottomOf="@+id/originalTitle"
+				tools:text="year" />
+
+			<TextView
+				android:id="@+id/rating"
+				android:layout_width="@dimen/match_constraint"
+				android:layout_height="@dimen/match_constraint"
+				style="@style/FilmDetailSubtitleStyle"
+				app:layout_constraintBottom_toTopOf="@+id/description"
+				app:layout_constraintEnd_toEndOf="@id/endGuideline"
+				app:layout_constraintStart_toEndOf="@+id/image"
+				app:layout_constraintTop_toBottomOf="@+id/year"
+				tools:text="rating" />
+
+			<TextView
+				android:id="@+id/description"
+				android:layout_width="@dimen/match_constraint"
+				android:layout_height="wrap_content"
+				style="@style/FilmDetailDescriptionStyle"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="@id/endGuideline"
+				app:layout_constraintStart_toStartOf="@id/startGuideline"
+				app:layout_constraintTop_toBottomOf="@+id/image"
+				tools:text="description" />
+
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/topGuideline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				app:layout_constraintGuide_begin="@dimen/spacing_16" />
+
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/startGuideline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				app:layout_constraintGuide_begin="@dimen/spacing_16" />
+
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/endGuideline"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				app:layout_constraintGuide_end="@dimen/spacing_16" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>
