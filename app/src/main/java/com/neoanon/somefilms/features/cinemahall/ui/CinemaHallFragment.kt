@@ -11,6 +11,7 @@ import com.neoanon.somefilms.features.cinemahall.presentation.CinemaHallPresente
 import com.neoanon.somefilms.features.cinemahall.presentation.CinemaHallView
 import com.neoanon.somefilms.features.cinemahall.presentation.FilmInfoItem
 import com.neoanon.somefilms.shared.ui.addBackPressedListener
+import com.neoanon.somefilms.shared.ui.setup
 import kotlinx.android.synthetic.main.fragment_cinema_hall.filmInfoRecycleView
 import kotlinx.android.synthetic.main.fragment_cinema_hall.progress
 import kotlinx.android.synthetic.main.fragment_cinema_hall.swipeContainer
@@ -41,7 +42,8 @@ class CinemaHallFragment : MvpAppCompatFragment(R.layout.fragment_cinema_hall), 
 		super.onViewCreated(view, savedInstanceState)
 
 		addBackPressedListener { presenter.onBackClicked() }
-		toolbar.title = getString(R.string.cinema_hall_title)
+		toolbar.setup(titleId = R.string.cinema_hall_title)
+
 		initFilmInfoRecycleView()
 
 		swipeContainer.setOnRefreshListener {

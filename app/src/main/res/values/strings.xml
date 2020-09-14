@@ -8,4 +8,6 @@
 	<string name="detail_film_year">Год : %s</string>
 	<string name="detail_film_rating">Рейтинг : %s</string>
 	<string name="no_data">нет данных</string>
+
+	<string name="back">Back</string>
 </resources>

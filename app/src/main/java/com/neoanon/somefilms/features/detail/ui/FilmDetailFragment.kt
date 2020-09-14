@@ -10,7 +10,9 @@ import com.neoanon.somefilms.features.detail.presentation.FilmDetailPresenter
 import com.neoanon.somefilms.features.detail.presentation.FilmDetailView
 import com.neoanon.somefilms.shared.films.domain.entity.FilmDetail
 import com.neoanon.somefilms.shared.films.extension.isUnknown
+import com.neoanon.somefilms.shared.ui.ToolbarNavigationIcon
 import com.neoanon.somefilms.shared.ui.addBackPressedListener
+import com.neoanon.somefilms.shared.ui.setup
 import kotlinx.android.synthetic.main.fragment_film_detail.description
 import kotlinx.android.synthetic.main.fragment_film_detail.image
 import kotlinx.android.synthetic.main.fragment_film_detail.originalTitle
@@ -43,15 +45,14 @@ class FilmDetailFragment : MvpAppCompatFragment(R.layout.fragment_film_detail), 
 		super.onViewCreated(view, savedInstanceState)
 
 		addBackPressedListener { presenter.onBackClicked() }
-		initToolbar()
+		toolbar.setup(navigationIcon = ToolbarNavigationIcon.BACK) {
+			setNavigationOnClickListener {
+				presenter.onBackClicked()
+			}
+		}
 
 		this.arguments?.let { presenter.onFilmIdFetched(it.filmId) }
 
-	}
-
-	private fun initToolbar() {
-		toolbar.setNavigationIcon(R.drawable.ic_arrow_white)
-		toolbar.setNavigationOnClickListener { presenter.onBackClicked() }
 	}
 
 	override fun showFilmDetail(detail: FilmDetail) {
