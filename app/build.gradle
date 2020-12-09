@@ -77,8 +77,8 @@ dependencies {
 	def recyclerView = '1.2.0-alpha05'
 	implementation "androidx.recyclerview:recyclerview:$recyclerView"
 
-	def cardView = '1.0.0'
-	implementation "com.google.android.material:material:$cardView"
+	def material = '1.2.1'
+	implementation "com.google.android.material:material:$material"
 
 	def swipeRefreshLayout = '1.1.0'
 	implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipeRefreshLayout"

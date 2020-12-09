@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/TitleItemStyle"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	android:layout_marginBottom="@dimen/spacing_4"
-	android:layout_marginTop="@dimen/spacing_4"
-	android:background="@color/colorPrimary"
 	android:orientation="vertical">
 
-	<TextView
+	<com.google.android.material.textview.MaterialTextView
 		android:id="@+id/title"
-		style="@style/TitleItemStyle"
+		style="@style/TitleItemTextViewStyle"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		tools:text="title" />

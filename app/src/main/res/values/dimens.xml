@@ -10,4 +10,5 @@
 	<dimen name="spacing_48">48dp</dimen>
 	<dimen name="spacing_138">138dp</dimen>
 	<dimen name="image_side">148dp</dimen>
+	<dimen name="elevation_4">4dp</dimen>
 </resources>

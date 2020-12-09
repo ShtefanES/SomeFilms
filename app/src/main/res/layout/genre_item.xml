@@ -3,10 +3,9 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	style="@style/CardViewStyle"
 	android:layout_width="@dimen/spacing_138"
-	android:layout_height="wrap_content"
-	tools:cardBackgroundColor="@color/colorPrimary">
+	android:layout_height="wrap_content">
 
-	<TextView
+	<com.google.android.material.textview.MaterialTextView
 		android:id="@+id/name"
 		style="@style/GenreItemTitleStyle"
 		android:layout_width="match_parent"

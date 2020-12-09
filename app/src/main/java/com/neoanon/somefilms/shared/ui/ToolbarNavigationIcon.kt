@@ -7,5 +7,5 @@ import com.neoanon.somefilms.R
 enum class ToolbarNavigationIcon(@StringRes val description: Int,
 								 @DrawableRes val icon: Int) {
 
-	BACK(R.string.back, R.drawable.ic_arrow_white)
+	BACK(R.string.back, R.drawable.ic_arrow)
 }

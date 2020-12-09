@@ -27,42 +27,42 @@
 				app:layout_constraintStart_toStartOf="@id/startGuideline"
 				app:layout_constraintTop_toTopOf="@id/topGuideline" />
 
-			<TextView
+			<com.google.android.material.textview.MaterialTextView
 				android:id="@+id/originalTitle"
+				style="@style/FilmDetailOriginalTitleStyle"
 				android:layout_width="@dimen/match_constraint"
 				android:layout_height="wrap_content"
-				style="@style/FilmDetailOriginalTitleStyle"
 				app:layout_constraintEnd_toEndOf="@id/endGuideline"
 				app:layout_constraintStart_toEndOf="@+id/image"
 				app:layout_constraintTop_toTopOf="@id/topGuideline"
 				tools:text="title" />
 
-			<TextView
+			<com.google.android.material.textview.MaterialTextView
 				android:id="@+id/year"
+				style="@style/FilmDetailSubtitleStyle"
 				android:layout_width="@dimen/match_constraint"
 				android:layout_height="wrap_content"
-				style="@style/FilmDetailSubtitleStyle"
 				app:layout_constraintEnd_toEndOf="@id/endGuideline"
 				app:layout_constraintStart_toEndOf="@+id/image"
 				app:layout_constraintTop_toBottomOf="@+id/originalTitle"
 				tools:text="year" />
 
-			<TextView
+			<com.google.android.material.textview.MaterialTextView
 				android:id="@+id/rating"
+				style="@style/FilmDetailSubtitleStyle"
 				android:layout_width="@dimen/match_constraint"
 				android:layout_height="@dimen/match_constraint"
-				style="@style/FilmDetailSubtitleStyle"
 				app:layout_constraintBottom_toTopOf="@+id/description"
 				app:layout_constraintEnd_toEndOf="@id/endGuideline"
 				app:layout_constraintStart_toEndOf="@+id/image"
 				app:layout_constraintTop_toBottomOf="@+id/year"
 				tools:text="rating" />
 
-			<TextView
+			<com.google.android.material.textview.MaterialTextView
 				android:id="@+id/description"
+				style="@style/FilmDetailDescriptionStyle"
 				android:layout_width="@dimen/match_constraint"
 				android:layout_height="wrap_content"
-				style="@style/FilmDetailDescriptionStyle"
 				app:layout_constraintBottom_toBottomOf="parent"
 				app:layout_constraintEnd_toEndOf="@id/endGuideline"
 				app:layout_constraintStart_toStartOf="@id/startGuideline"

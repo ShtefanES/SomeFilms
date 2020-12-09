@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colors -->
+    <attr name="backgroundColorSelected" format="color" />
+    <attr name="backgroundColorUnselected" format="color" />
+    <attr name="textColorSelected" format="color" />
+    <attr name="textColorUnselected" format="color" />
+    <attr name="titleContainerColorPoster" format="color" />
+</resources>

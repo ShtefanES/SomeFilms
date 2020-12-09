@@ -20,7 +20,7 @@
 			android:layout_height="@dimen/spacing_48"
 			android:layout_gravity="bottom">
 
-			<TextView
+			<com.google.android.material.textview.MaterialTextView
 				android:id="@+id/title"
 				style="@style/PosterItemTitleStyle"
 				android:layout_width="match_parent"
