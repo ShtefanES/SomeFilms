@@ -1,2 +1,3 @@
+include ':stubapiserver'
 include ':app'
 rootProject.name = "Some films"
