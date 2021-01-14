@@ -4,6 +4,14 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
+	signingConfigs {
+		release {
+			keyAlias 'somefilms123'
+			keyPassword 'Somefilms321'
+			storePassword 'Somefilms321'
+			storeFile file("../configs/keystore/release.keystore")
+		}
+	}
 	compileSdkVersion 30
 	buildToolsVersion "30.0.2"
 
@@ -23,6 +31,14 @@ android {
 		release {
 			minifyEnabled false
 			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+			buildConfigField "boolean", "STUB_ENABLED", "false"
+
+			signingConfig signingConfigs.release
+		}
+
+		debug {
+			buildConfigField "boolean", "STUB_ENABLED", "true"
 		}
 	}
 
@@ -88,4 +104,6 @@ dependencies {
 
 	def fragment = '1.2.5'
 	implementation "androidx.fragment:fragment-ktx:$fragment"
+
+	debugImplementation project(":stubapiserver")
 }

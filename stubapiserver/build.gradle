@@ -1,4 +1,6 @@
 apply plugin: com.android.build.gradle.LibraryPlugin
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-android-extensions"
 
 android {
     defaultConfig {
@@ -10,4 +12,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+}
+
+dependencies {
+    def okHttp = "4.8.0"
+    implementation "com.squareup.okhttp3:okhttp:$okHttp"
 }

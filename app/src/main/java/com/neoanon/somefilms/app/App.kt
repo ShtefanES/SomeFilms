@@ -3,10 +3,13 @@ package com.neoanon.somefilms.app
 import android.app.Application
 import com.facebook.stetho.Stetho
 import com.neoanon.somefilms.BuildConfig
+import com.neoanon.somefilms.di.configModule
 import com.neoanon.somefilms.di.databaseModule
 import com.neoanon.somefilms.di.navigationModule
 import com.neoanon.somefilms.di.networkModule
 import com.neoanon.somefilms.di.preferenceModule
+import com.neoanon.somefilms.di.stubInterceptorModule
+import com.neoanon.somefilms.di.stubModule
 import com.neoanon.somefilms.features.cinemahall.di.cinemaHallModule
 import com.neoanon.somefilms.features.detail.di.filmDetailModule
 import com.neoanon.somefilms.shared.films.di.filmsModule
@@ -30,6 +33,9 @@ class App : Application() {
 			modules(
 				listOf(
 					networkModule,
+					stubModule,
+					configModule,
+					stubInterceptorModule,
 					databaseModule,
 					preferenceModule,
 					navigationModule,
